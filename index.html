@@ -14,13 +14,13 @@
           <img src="./image/logo-header.gif">
         </div>
         <div class="options">
-          <div class="buttons">
+          <div class="buttons" ui-sref="about-us">
             <h1>關於萬物曆</h1>
           </div>
           <div class="buttons" ui-sref="circle-24">
             <h1>製作過程</h1>
           </div>
-          <div class="buttons">
+          <div class="buttons" ui-sref="visit">
             <h1>觀展須知</h1>
           </div>
         </div>
@@ -35,7 +35,7 @@
       </div>
     </div>
   </div>
-</body>
+
 <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 <script src="//angular-ui.github.io/ui-router/release/angular-ui-router.js"></script>
 <script>
@@ -74,8 +74,16 @@
             }
           }
         })
+        .state('visit', {
+          url: "/visit",
+          templateUrl: "templates/visit.html"
+        })
+        .state('about-us', {
+          url: "/about-us",
+          templateUrl: "templates/about-us.html"
+        })
     })
+    
 </script>
-   
-   
+</body>
 </html>
