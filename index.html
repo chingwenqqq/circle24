@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exhibition</title>
+  <link rel="stylesheet" type="text/css" href="css/custom.css">
+</head>
+<body ng-app="exhibition">
+  <div class="full">
+    <div class="site-structure">
+      <div class="header">
+        <div class="logotype">
+          <img src="../image/logo-header.gif">
+        </div>
+        <div class="options">
+          <div class="buttons">
+            <h1>關於萬物曆</h1>
+          </div>
+          <div class="buttons" ui-sref="circle-24">
+            <h1>製作過程</h1>
+          </div>
+          <div class="buttons">
+            <h1>觀展須知</h1>
+          </div>
+        </div>
+      </div>
+
+      <div class="wrapper">    
+        <div ui-view></div>
+      </div> 
+
+      <div class="footer">
+        <p>© 2016 by Ching Wen ＆ Wen Xin.「 吾 感 」臺藝視傳/ 日間部102級/ 班展  萬物曆</p>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script src="//angular-ui.github.io/ui-router/release/angular-ui-router.js"></script>
+<script>
+  angular.module('exhibition', ['ui.router'])
+    .config(function($stateProvider, $urlRouterProvider) {
+      $urlRouterProvider.otherwise("/state1")
+      $stateProvider
+        .state('circle-24', {
+          url: "/circle-24",
+          templateUrl: "templates/circle-24.html",
+          controller: function($scope) {
+            for (var index = 1; index <= 24; index += 1) {
+              var fillZeroIndex = ("0" + index).slice(-2)
+              var radius = 250
+              var diff = 33
+
+              // times
+              var times = document.getElementsByClassName('times-' + fillZeroIndex)[0]
+              var topY = 340 - radius * Math.sin(index * Math.PI / 12)
+              var rightX = 393 - radius * Math.cos(index * Math.PI / 12)
+              times.style.top = topY + 'px'
+              times.style.right = rightX + 'px'
+              times.style.transform = 'rotate(' + (-index * 15) + 'deg)'
+              
+              // text
+              var target = document.getElementsByClassName('season-' + fillZeroIndex)[0]
+              if (index % 2 == 0) {
+                radius = radius + diff
+              } else {
+                radius = radius - diff
+              }
+              var topY = 320 - radius * Math.sin(index * Math.PI / 12)
+              var rightX = 370 - radius * Math.cos(index * Math.PI / 12)
+              target.style.top = topY + 'px'
+              target.style.right = rightX + 'px'
+            }
+          }
+        })
+    })
+</script>
+   
+   
+</html>
