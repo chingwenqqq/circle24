@@ -1,0 +1,155 @@
+<style>
+.content {
+    width: 750px;
+    height: auto;
+    background-color: ;
+    margin: 0 auto;
+}
+.display {
+    margin: 0 auto;
+    margin-top: 60px;
+    width: 750px;
+    height: 450px;
+    background-color: ;
+}
+.works {
+    width: 320px;
+    height: 400px;
+    background-color: white;
+    float: left;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+.comment {
+    width: 320px;
+    height: 400px;
+    background-color: white;
+    float: left;
+    margin-left: 38px;
+    margin-top: 20px;
+} 
+.comment > h4 {
+    font-size: 15px;
+    line-height: 30px;
+}
+.gradual {
+    margin: 0 auto;
+    margin-top: 60px;
+    width: 420px;
+    height: 525px;
+    background-color: white;
+    animation-name: gradual;
+    animation-duration: 5s;
+    animation-direction: reverse;
+    animation-iteration-count: infinite;
+}
+@keyframes gradual {
+    100%   { background-image:url(./image/180/gradual1.png);}
+    70%  { background-image:url(./image/180/gradual2.png);}
+    35%  { background-image:url(./image/180/gradual3.png);}
+    0% { background-image:url(./image/180/gradual1.png);}
+}
+
+.all-process {
+    margin: 0 auto;
+    margin-top: 100px;
+    width: 620px;
+    height: 800px;
+    background-color: ;
+}
+.process {
+    float: left;
+    width: 300px;
+    height: 380px;
+    background-color: ;
+    margin-left: 10px;
+    margin-top: 50px;
+}
+ 
+.process-img {
+    margin-top: 10px;
+    margin-bottom:30px;
+    margin-left: 20px;
+    width: 208px;
+    height: 260px;
+    background-color: pink;
+}
+.process-comment {
+    margin-left: 20px;
+    width: 270px;
+    height: 70px;
+    background-color: ;
+}
+.process-comment > p {
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: 1px;
+    color: #777777;
+}
+.back {
+    padding-top: 150px;
+    margin: 0 auto;
+    height: 20px;
+    width: 160px;
+    background-color: ;
+    text-align: center;
+    font-size: 15px;
+    color: #777777;
+    cursor: pointer;
+    border-style: none none solid none;
+    border-width: 1px;
+}
+.back:hover {
+    border-width: 2px;
+    width: 250px;
+}
+</style>
+<div class="content">
+                <div class="display">
+                    <div class="works">
+                        <img src="./image/180/top-180.png">
+                    </div>
+                    <div class="comment">
+                        <h2>
+                            title
+                        </h2>
+                        <h4>
+                            這是作品小詩～<br>
+                            這是作品小詩～<br>
+                            這是作品小詩～<br>
+                            這是作品小詩～<br>
+                        </h4>
+                    </div>
+                </div>
+                <div class="gradual"></div>
+                <div class="all-process">
+
+                    <div class="process">
+                        <div class="process-img">
+                            <img src="./image/180/process1.png">
+                        </div>
+                        <div class="process-comment">
+                            <p>步驟一<br>這是步驟解說這是步驟解說這是步驟解說這是步驟解說這是步驟解說這是步驟解說這是步驟解說這是步驟解說</p>
+                        </div>
+                    </div>
+                    <div class="process">
+                        <div class="process-img">
+                            <img src="./image/180/process2.png">
+                        </div>
+                        <div class="process-comment">
+                            <p>步驟二<br>這是步驟解說這是步驟解說這是步驟解說這是步驟解說這是步驟解說這是步驟解說這是步驟解說這是步驟解說</p>
+                        </div>
+                    </div>
+                    <div class="process">
+                        <div class="process-img">
+                            <img src="./image/180/process3.png">
+                        </div>
+                        <div class="process-comment">
+                            <p>步驟三<br>這是步驟解說這是步驟解說這是步驟解說這是步驟解說這是步驟解說這是步驟解說這是步驟解說這是步驟解說</p>
+                        </div>
+                    </div>
+                     
+
+                </div>
+            </div>
+            <div class="back" ui-sref="circle-24">back to the last page</div>
