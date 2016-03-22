@@ -57,9 +57,11 @@ body {
 }
 .buttons:hover {
     background-color: #ffb8b8;
-    color: white;
     border-color: white;
 }
+.buttons:hover > h1 {
+    color: white;
+} 
 .wrapper {
     margin: 0 auto;
     margin-top: 50px;
