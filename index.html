@@ -50,7 +50,7 @@
             for (var index = 1; index <= 24; index += 1) {
               var fillZeroIndex = ("0" + index).slice(-2)
               var radius = 250
-              var diff = 33
+              var diff = 50
 
               // times
               var times = document.getElementsByClassName('times-' + fillZeroIndex)[0]
@@ -67,8 +67,8 @@
               } else {
                 radius = radius - diff
               }
-              var topY = 320 - radius * Math.sin(index * Math.PI / 12)
-              var rightX = 370 - radius * Math.cos(index * Math.PI / 12)
+              var topY = 323 - radius * Math.sin(index * Math.PI / 12)
+              var rightX = 369.5 - radius * Math.cos(index * Math.PI / 12)
               target.style.top = topY + 'px'
               target.style.right = rightX + 'px'
             }

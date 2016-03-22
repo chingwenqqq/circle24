@@ -56,8 +56,8 @@ body {
     opacity: 0.9;
 }
 .buttons:hover {
-    background-color:#ffb8b8;
-    color: #430000;
+    background-color: #ffb8b8;
+    color: white;
     border-color: white;
 }
 .wrapper {

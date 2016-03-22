@@ -20,6 +20,7 @@
     position: relative;
     z-index: 30;
     background-image: url(./image/circle-bg2.png);
+    opacity: 0.4;
     background-repeat: no-repeat;
     background-position: center center;
 }
@@ -49,23 +50,28 @@
     width: 60px;
     height: 30px;
     border-radius: 30px;
+    background-color: #edffb8;
     cursor: pointer;
     text-align: center;
-    padding-top: 13px;
+    padding-top: 8px;
+    padding-bottom: px;
     z-index: 20;
-    font-size: 16px;
-    color: #5d5d5d;
+    font-size: 17px;
+    color: #777777;
+    border-style: none solid none solid;
+    border-width: 2px;
+    border-color: white;
 }
 .season:hover {
-    text-decoration: underline;
-    color: #777777;
+    color: white;
+    background-color: #ffb8b8;
 }
 .times {
     background-color: #777777;
-    height: 2px;
-    width: 14px;
+    height: 1px;
+    width: 16px;
     position: absolute;
-    opacity: 0.2;
+    opacity: 0.5;
 }
 .season-06:hover + .circle {
     background-image: url(./image/0/top-0.png);
