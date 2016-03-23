@@ -31,17 +31,17 @@ body {
 .options {
     margin: 0 auto;
     margin-top: 10px;
-    width: 350px;
-    max-width: 80%;
+    width: 300px;
+    max-width: 90%;
     height: 50px;
     background-color: ;
 }
 .buttons {
     display: inline-block;
     width: 110px;
-    max-width: 30%;
+    max-width: 25%;
     height: 40px;
-    margin-left: 6px;
+    margin-left: 10px;
     padding-right: 2px;
     background-color: ;
     border-right-style: solid;
@@ -69,6 +69,7 @@ body {
 .footer {
     padding-top: 20px;
     height: 30px;
+    max-width: 70%;
     width: 500px;
     margin: 0 auto;
     background-color: ;
@@ -78,6 +79,7 @@ body {
     border-style: solid none none none;
     border-width: 1px;
     border-color: #777777;
+    line-height: 15px;
 }
 .footer > p {
     color: #777777;
