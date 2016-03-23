@@ -55,7 +55,7 @@
               // times
               var times = document.getElementsByClassName('times-' + fillZeroIndex)[0]
               var topY = 340 - radius * Math.sin(index * Math.PI / 12)
-              var rightX = 393 - radius * Math.cos(index * Math.PI / 12)
+              var rightX = 392 - radius * Math.cos(index * Math.PI / 12)
               times.style.top = topY + 'px'
               times.style.right = rightX + 'px'
               times.style.transform = 'rotate(' + (-index * 15) + 'deg)'
@@ -67,10 +67,17 @@
               } else {
                 radius = radius - diff
               }
-              var topY = 323 - radius * Math.sin(index * Math.PI / 12)
-              var rightX = 369.5 - radius * Math.cos(index * Math.PI / 12)
+              var topY = 318 - radius * Math.sin(index * Math.PI / 12)
+              var rightX = 370 - radius * Math.cos(index * Math.PI / 12)
               target.style.top = topY + 'px'
               target.style.right = rightX + 'px'
+            }
+            var target = document.getElementsByClassName('circle')[0]
+            $scope.changeImageSource = function (imgSource) {
+              target.style.backgroundImage = "url('" + imgSource + "')"
+            }
+            $scope.setDefaultImageSource = function () {
+              target.style.backgroundImage = "url('./image/circle-bg2.png')"
             }
           }
         })
